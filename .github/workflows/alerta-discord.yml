@@ -1,0 +1,21 @@
+name: Alerta Discord
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  send-discord-alert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Avisar Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\": \"🚀 Novo commit no branch main!\"}" \
+               "https://discordapp.com/api/webhooks/1366125221022667002/z24ZyoN87TsVIMxELTV06_1kH9-eL9Q34FBdfphK_NNfYrvzuuh_VnWzhR2esUVUkS5Y"
