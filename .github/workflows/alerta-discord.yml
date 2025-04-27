@@ -18,4 +18,4 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d "{\"content\": \"🚀 Novo commit no branch main!\"}" \
-               " https://discordapp.com/api/webhooks/1366125221022667002/z24ZyoN87TsVIMxELTV06_1kH9-eL9Q34FBdfphK_NNfYrvzuuh_VnWzhR2esUVUkS5Y"
+               "https://discordapp.com/api/webhooks/1366125221022667002/z24ZyoN87TsVIMxELTV06_1kH9-eL9Q34FBdfphK_NNfYrvzuuh_VnWzhR2esUVUkS5Y"
